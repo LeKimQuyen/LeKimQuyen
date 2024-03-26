@@ -134,7 +134,7 @@ a.logo img {
     padding: 10px 15px;
     background-color: black;
     border-radius: 10px;
-    box-shadow: 0 0 15px #eee;
+    box-shadow: 0 0 15px #eee, inset 0 0 3px #eee;
 }
 
 a .fa-solid {

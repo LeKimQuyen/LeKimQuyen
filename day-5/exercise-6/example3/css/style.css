@@ -43,4 +43,5 @@
 /* ============ nav ============= */
   .fa-solid {
     color: #eee;
+    text-shadow: 0 0 10px #eee;
   }
