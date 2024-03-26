@@ -1,0 +1,46 @@
+/* Enter your CSS solution here! */
+.wrapper {
+    height: 100vh;
+    color: white;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 10px; 
+    grid-template-areas: 
+        "header header header"
+        "sidebar content content"
+        "sidebar content content"
+        "footer footer footer"; 
+}
+
+.header,
+.sidebar,
+.content,
+.footer {
+    padding: 100px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #9e9a9a;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #413e3e;
+}
+
+.content {
+    grid-area: content;
+    background-color: #413e3e;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #9e9a9a;
+}
+
+/* ============ nav ============= */
+  .fa-solid {
+    color: #eee;
+  }

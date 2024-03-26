@@ -1,0 +1,9 @@
+ul li{
+    cursor: pointer;
+}
+
+.completed {
+    /* Add your own styles here */
+    color: blue;
+    font-weight: bold;
+}

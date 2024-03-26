@@ -1,0 +1,86 @@
+.challenge {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: darkblue;
+}
+
+/* challenge 2 */
+.challenge-2 .yellow {
+    margin-left: 100px;
+}
+
+.challenge-2 .blue {
+    margin-left: 200px;
+}
+
+/* challenge 3 */
+.challenge-3 .yellow {
+    position: relative;
+    left: 100px;
+}
+
+.challenge-3 .blue {
+    position: relative;
+    left: 200px;
+}
+
+/* challenge 4 */
+.challenge-4 {
+    position: relative;
+}
+
+.challenge-4 .yellow {
+    position: absolute;
+    left: 100px;
+}
+
+.challenge-4 .blue {
+    position: absolute;
+    top: 280px;
+    left: 200px;
+}
+
+/* challenge 5 */
+.challenge-5 {
+    position: relative;
+}
+
+.challenge-5 .top-right {
+    background-color: rgba(255, 0, 0, 0.595);
+    position: absolute;
+    left: 200px;
+    top: 80px;
+}
+
+.challenge-5 .yellow{
+    position: relative;
+    left: 100px;
+}
+
+.challenge-5 .bottom-right {
+    background-color: red;
+    position: absolute;
+    top: 280px;
+    left: 200px;
+}

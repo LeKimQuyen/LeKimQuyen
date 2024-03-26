@@ -1,0 +1,33 @@
+/* Enter your CSS solution here! */
+body {
+    height: 100vh;
+    display: flex;
+}
+
+nav {
+    background-color: rgb(163, 215, 216);
+    width: 50%;
+    padding: 10px;
+}
+
+nav h1 {
+    transform: rotate(90deg) translate(40%,-25%);
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    background-color: rgb(224, 231, 230);
+    padding: 10px;
+    padding-bottom: calc(100% - 55%);
+}
+
+footer {
+    background-color: #7ebfbd;
+    padding: 10px;
+    padding-bottom: 20px;
+}

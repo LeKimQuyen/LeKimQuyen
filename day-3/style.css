@@ -1,0 +1,140 @@
+/* ============== header ============== */
+header {
+    padding: 35px 0 15px;
+    height: 310px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0 0 5px;
+    font-size: 3rem;
+    text-shadow: 0px 0px 20px rgba(230, 223, 228,1);
+
+}
+
+header .list {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 100px;
+    transition: all 0.5s ease;
+    padding: 0 10px;
+}
+
+header a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+header img:hover,
+header a.active > img{
+    height: 150px;
+}
+
+header a:hover::before,
+header a.active::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.8s 0s linear;
+}
+header a::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 50%;
+    top: 25%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 30px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+  
+@keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+}
+
+.bgi {
+    position: absolute;
+    background-image: url(img/Kawasaki/Kawasaki-background.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+
+/* ============== outstanding ============== */
+main section {
+    /* background-color: blue; */
+    margin: 0 auto;
+    width: calc(100% - 140px);
+}
+
+main section h2 {
+    text-align: start;
+    margin: 100px 0 10px;
+    font-size: 2rem;
+}
+
+.moto_block {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.moto_block .item {
+    width: 30%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.moto_block .item:hover {
+    box-shadow: inset rgb(91, 91, 91) 0 0 25px, rgb(91, 91, 91) 0 0 10px;
+}
+
+.moto_block .item:active {
+    opacity: 0.8;
+}
+
+.moto_block .item:hover > img {
+    transform: scale(1.2);
+}
+
+.moto_block .item img {
+    display: inline-block;
+    transition: all .5s ease;
+    height: 200px;
+}
+
+.moto_block .item h3 {
+    font-size: 1.5rem;
+}

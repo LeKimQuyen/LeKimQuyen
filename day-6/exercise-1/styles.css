@@ -1,0 +1,78 @@
+.square {
+    position: relative;
+}
+
+.square:nth-child(odd) {
+    background-color: #fdfff5;
+}
+
+.square:nth-child(even) {
+    background-color: lightgreen;
+}
+
+.square:nth-child(14n + 7)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    background-color: lightgreen;
+    border: inherit;
+}
+
+.square:nth-child(14n + 14)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    background-color: #fdfff5;
+    border: inherit;
+}
+
+.square:nth-last-child(8) ~ .square:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: #fdfff5;
+    border: inherit;
+}
+
+.square:nth-last-child(8) ~ .square:nth-child(odd):not(:last-child)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: lightgreen;
+    border: inherit;
+}
+
+.square:last-child::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: lightgreen;
+    border: inherit;
+}
+
+.square:nth-last-child(2)::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 200%;
+    background-color: #fdfff5;
+    border: inherit;
+}

@@ -1,0 +1,47 @@
+/* YOUR STYLE GOES IN HERE */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    border: 3px solid #FFBFA9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+}
+
+img {
+    width: 200px;
+    border: 6px solid #FBFFB1;
+    border-radius: 50%;
+    background-color: #FFACAC;
+}
+
+.extra1 {
+    border-radius: 60px 30px;
+}
+
+.extra2 {
+    border-radius: 0px 45%;
+}
+
+.extra3 {
+    border-radius: 31% 18% 31% 17% / 9% 39% 7% 36%;
+}
+
+.extra4 {
+    border-radius: 20px 50px 40% 50%;
+}
+
+/* ============= nav ============= */
+  nav img {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+  }

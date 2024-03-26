@@ -1,0 +1,85 @@
+
+/* ============ nav ============= */
+/* 
+  <a href="/index.html" class="logo"><img src="/img/RMIT-logo-black.svg.png" alt="RMIT-logo"></a>
+  <a href="../exercise-4/index.html" class="prev"><i class="fa-solid fa-chevron-left"></i></a>
+  <a href="../exercise-6/example1/index.html" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+*/
+a.prev:active,
+a.next:active,
+a.logo:active {
+  opacity: 8%;
+}
+
+a.prev, a.next {
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    height: 90vh;
+    top: 5vh;
+    align-content: center;
+    z-index: 2;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  a.logo {
+    z-index: 2;
+    position: fixed;
+    display: inline-block;
+    width: 50vw;
+    height: 100px;
+    top: 8px;
+    left: 25vw;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  a.logo img {
+    width: 100px;
+    height: 35px;
+    margin-top: 8px;
+    position: relative;
+    transition: all .8s ease;
+    top: -60%;
+  }
+  
+  a.prev {
+    text-align: end;
+    left: 8px;
+  }
+  
+  a.next {
+    text-align: start;
+    right: 8px;
+  }
+  
+  a .fa-solid {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 10px;
+    color: black;
+    position: relative;
+    transition: all .8s ease;
+    /* text-shadow: 0 0 10px #eee; */
+  }
+  
+  a .fa-chevron-left {
+    left: -100px;
+  }
+  
+  a .fa-chevron-right {
+    right: -100px;
+  }
+  
+  a.prev:hover > .fa-chevron-left {
+    left: 0;
+  }
+  
+  a.next:hover > .fa-chevron-right {
+    right: 0;
+  }
+
+  a.logo:hover > img {
+    top: 0;
+  }

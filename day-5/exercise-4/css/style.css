@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #303030;
+    background-color: #fafafa;
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: indigo;
+    font-family: "Georgia", "Times", serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: darkcyan;
+    text-decoration: none;
+  }
+  
+  /** START WRITING YOUR CSS CODE FOR PAGE LAYOUT BELOW THIS COMMENT **/ 
+  .main-nav {
+    border-bottom: 1px solid #30303035;
+    padding: 10px 0;
+    display: flex;
+  }
+  
+  .main-nav-link {
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-weight: 600;
+  }
+
+  .main-nav a:last-child {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .main-nav a:last-child img {
+    width: 60px;
+    height: 20px;
+  }
+  
+  .content-container {
+    width: calc(100% - 50%);
+    margin: 0px auto;
+    padding: 30px;
+  }
+
+  main .content-section:nth-child(odd) {
+    background-color: #e0e0e058;
+  }
+
+  .page-footer {
+    background-color: rgba(41, 13, 60, 0.933);
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  label {
+    margin-top: 15px;
+  }
+
+  input, textarea, label, button {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(13, 157, 13, 0.794);
+  }
+
+/* ============ nav ============= */
+a.prev, a.next {
+  display: inline-block;
+  position: fixed;
+  width: 100px;
+  height: 90vh;
+  top: 5vh;
+  align-content: center;
+}
+
+a.prev {
+  text-align: end;
+}
+
+a.next {
+  text-align: start;
+  right: 8px;
+}
+
+.fa-solid {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin: 10px;
+  color: black;
+  position: relative;
+  transition: all .8s ease;
+}
+
+.fa-chevron-left {
+  left: -100px;
+}
+
+.fa-chevron-right {
+  right: -100px;
+}
+
+a.prev:hover > .fa-chevron-left {
+  left: 0;
+}
+
+a.next:hover > .fa-chevron-right {
+  right: 0;
+}

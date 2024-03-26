@@ -1,0 +1,42 @@
+/* Enter your CSS solution here! */
+body {
+    height: 100vh;
+}
+
+header,
+main nav,
+main article,
+main aside,
+footer {
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(150, 220, 207);
+    height: calc(100% - 90%);
+}
+
+main {
+    display: flex;
+    height: calc(100% - 30%);
+}
+
+main nav {
+    background-color: rgba(234, 152, 0, 0.863);
+    width: calc(100% - 80%);
+}
+
+main article {
+    background-color: rgb(242, 209, 62);
+    width: calc(100% - 50%);
+}
+
+main aside {
+    background-color: rgb(242, 242, 128);
+    width: calc(100% - 70%);
+}
+
+footer {
+    background-color: rgb(75, 155, 136);
+    height: calc(100% - 87%);
+}
