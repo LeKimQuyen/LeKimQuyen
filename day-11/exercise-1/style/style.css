@@ -17,7 +17,12 @@ button{
     border-radius: 0;
     transition: none;
     padding: 0;
-    border-width: 2px;
+    /* border-width: 2px;
     border-style: outset;
-    border-color: buttonface;
+    border-color: buttonface; */
+    border: 2px outset buttonface;
+  }
+
+  nav button:active {
+    border-style: inset;
   }
