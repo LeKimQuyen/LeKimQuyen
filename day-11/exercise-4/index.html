@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Collection</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="../../css/prev-next-top-style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav style="margin-bottom: 20px;">
+        <a href="../exercise-3/index.html"><button>Prev</button></a>
+        <a href="../../index.html"><img width="100px" height="35px" src="../../img/RMIT-logo-black.svg.png" alt="RMIT-logo" /></a>
+        <a><button class="disable">Next</button></a>
+    </nav>
+
+    <h1>Pokemon Collection</h1>
+    <label for="pokemon-number">Number of Pokemon:</label>
+    <input type="number" id="pokemon-number" name="pokemon-number" min="1" max="649" value="100"><br>
+
+    <label for="animated-images">Animated Images:</label>
+    <input type="checkbox" id="animated-images" name="animated-images" checked><br>
+
+    <button id="generate-btn">Generate</button>
+
+    <section id="container"></section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
